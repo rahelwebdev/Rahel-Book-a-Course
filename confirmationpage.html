@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>booking page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       
+       color:black;
+       text-align: center;
+    }
+    .navigation {
+            margin-left: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+  <div class="navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">connexio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="kursbeschreibung.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kursbeschreibung.html">Angebot</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kursbeschreibung.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Aktuelle Kurse
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Sprachtest</a>
+            <a class="dropdown-item" href="#">Über connexio</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sprachtest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Über connexio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="book-a-course.html">Kontakt</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+  </div>
+
+  <div class="container mt-3">
+    <h2>BESTÄTIGUNG</h2>
+    <form action="/action_page.php">
+      <div class="mb-3 mt-3">
+        <div class="mb-3">
+          <label for="fname">Vorname:</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="fname">Nachname:</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required
+            class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="fname">Ich interessiere mich für:</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary" class="form-control">BESTÄTIGEN</button>
+        </div>
+
+      </div>
+
+  </div>
+
+  </form>
+  </div>
+
+  <!--footer-->
+  <div class="footer">
+
+    <div class="container-fluid mt-3">
+      <h3>KONTAKT</h3>
+
+      <div class="row">
+        <div class="col p-3 ">
+          <p>connexio Sprachschule Zürich<br>
+            Badenerstr. 120<br>
+            3020 Zürich<br>
+            +41 44 303 26 89<br>
+            info@connexio.gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
