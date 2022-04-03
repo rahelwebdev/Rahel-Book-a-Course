@@ -72,7 +72,7 @@
 
   <div class="container mt-3">
     <h2>KURSANFRAGE</h2>
-    <form action="result.html" onSubmit="return onSubmit()">
+    <form action="result.html" onSubmit="return validateForm()">
       <div class="mb-3 mt-3">
         <div class="mb-3">
           <label for="fname">Vorname:</label>
@@ -80,7 +80,7 @@
         </div>
 
         <div class="mb-3">
-          <label for="fname">Nachname:</label>
+          <label for="lastName">Nachname:</label>
           <input type="text" id="lastName" class="form-control">
         </div>
 
@@ -96,8 +96,8 @@
         </div>
 
         <div class="mb-3">
-          <label for="fname">Ich interessiere mich für:</label>
-          <input type="text" class="form-control">
+          <label for="kurse">Ich interessiere mich für:</label>
+          <input type="text" class="form-control" id="kurse">
         </div>
 
         <div class="mb-3">
